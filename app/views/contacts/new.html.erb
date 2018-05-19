@@ -1,59 +1,45 @@
 <div align="center">
-  <h3>Send A message to Us</h3>
+  <h3>Contact Us!</h3>
 
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-    </div>
+    <%= f.input :message, :as => :text %>
+
 
     <div>
     	<%= f.label :interest1, "Web Development" %>    	
-    	<%= f.input :interest1, as: :boolean do %>
-  			<%= f.check_box :interest1, {}, "Web Development", nil %>
-		<% end %>
+    	<%= f.check_box :interest1, {}, "Web Development", nil %>
     </div>
 
     <div>
-    	<%= f.label :interest2, "Full Stack" %>    	
-    	<%= f.input :interest2, as: :boolean do %>
-  			<%= f.check_box :interest2, {}, "Full Stack", nil %>
-		<% end %>
+    	<%= f.label :interest2, "Full Stack" %> 
+      <%= f.check_box :interest2, {}, "Full Stack", nil %>
     </div>
 
     <div>
-    	<%= f.label :interest3, "Back End" %>    	
-    	<%= f.input :interest3, as: :boolean do %>
-  			<%= f.check_box :interest3, {}, "Back End", nil %>
-		<% end %>
+    	<%= f.label :interest3, "Back End" %>    
+  		<%= f.check_box :interest3, {}, "Back End", nil %>
     </div>
 
     <div>
     	<%= f.label :interest4, "Something Else" %>
-    	<%= f.input :interest4, as: :boolean do %>
-  			<%= f.check_box :interest4, {}, "Something Else", nil %>
-		<% end %>
+      <%= f.check_box :interest4, {}, "Something Else", nil %>
     </div>
 
     <div>
     	<%= f.label :interest5, "Portfolio Review" %>
-    	<%= f.input :interest5, as: :boolean do %>
-  			<%= f.check_box :interest5, {}, "Portfolio Review", nil %>
-		<% end %>
+      <%= f.check_box :interest5, {}, "Portfolio Review", nil %>
     </div>
 
     <div>
     	<%= f.label :interest6, "Another Thing" %>    	
-    	<%= f.input :interest6, as: :boolean do %>
-  			<%= f.check_box :interest6, {}, "Another Thing", nil %>
-		<% end %>
+      <%= f.check_box :interest6, {}, "Another Thing", nil %>
     </div>
 
     <div>
       </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+      <%= f.button :submit, 'Send!', :class=> "btn btn-primary" %>
     </div>
   <% end %>
 </div>

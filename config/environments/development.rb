@@ -36,8 +36,8 @@ Rails.application.configure do
     address:     'smtp.gmail.com',
     port:        587,
     domain:      'gmail.com',
-    user_name:   "kris.e.lentz@gmail.com",
-    password:     "Sputnik84!",
+    user_name:   "(EMAIL)",
+    password:     "(PASSWORD)",
     # we want to use the Figaro gem to hide our UN & PW! 
     authentication:  'plain',
     enable_starttls_auto: true
